@@ -1,0 +1,211 @@
+/**
+ * Widget styles. Because cleanslate is being used, all styles
+ * need to be overridden with !important.
+ */
+
+/* Main style */
+#ankilang.hide {
+  display: none !important;
+}
+
+#ankilang .overlay {
+  background: black !important;
+  opacity: .5 !important;
+  position: fixed !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  right: 0px !important;
+  z-index: 100000000000 !important;
+}
+
+#ankilang .wrapper {
+  position: fixed !important;
+  top: 30% !important;
+  height: 40% !important;
+  min-height: 200px !important;
+  left: 50% !important;
+  width: 500px !important;
+  margin-left: -250px !important;
+  z-index: 101 !important;
+  background-color:#fff !important;
+  color:#7F7F7F !important;
+  padding:20px !important;
+  border:2px solid #ccc !important;
+  border-radius: 20px !important;
+  -webkit-animation-duration: 0.5s !important;
+  -webkit-box-shadow: 0 1px 5px #333 !important;
+  z-index:100000000001 !important;
+}
+
+#ankilang a.close {
+  float:right !important;
+  margin-top: -15px !important;
+  margin-right: -10px !important;
+  color: #fff !important;
+  border: 1px solid #AEAEAE !important;
+  border-radius: 32px !important;
+  background: #605F61 !important;
+  font-size: 28px !important;
+  font-weight: bold !important;
+  display: inline-block !important;
+  line-height: 15px !important;
+  padding: 11px 3px;       
+  text-decoration: none !important;
+}
+
+#ankilang .close:before {
+  content: "×" !important;
+}
+
+#ankilang .content {
+  margin: 0 auto !important;
+  width: inherit !important;
+  height: inherit !important;
+}
+
+/* Loading Styles */
+#ankilang.loading .wrapper {
+  top: 50% !important;
+  height: 200px !important;
+  margin-top: -100px !important;
+}
+
+#ankilang.loading .content {
+  text-align: center !important;
+  font-size: 28px !important;
+  font-weight: bold !important;
+  padding-top: 86px !important;
+}
+
+@-webkit-keyframes loading-period {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#ankilang.loading .period:before {
+  content: "." !important;
+}
+
+#ankilang.loading .period {
+  -webkit-animation-name: loading-period !important;
+  -webkit-animation-iteration-count: infinite !important;
+  margin-right: 10px !important;
+  opacity: 0;
+}
+
+#ankilang.loading .first {
+  -webkit-animation-duration: 1.2s !important;
+  -webkit-animation-delay: 0.3s !important;
+}
+
+#ankilang.loading .second {
+  -webkit-animation-duration: 1.2s !important;
+  -webkit-animation-delay: 0.6s !important;
+}
+
+#ankilang.loading .third {
+  -webkit-animation-duration: 1.2s !important;
+  -webkit-animation-delay: 0.9s !important;
+}
+
+/* Word display styles */
+#ankilang.show-words .wrapper {
+  top: 10% !important;
+  height: 80% !important;
+}
+
+#ankilang.show-words h1 {
+  font-size: 20px !important;
+  text-decoration: bold !important;
+  color: black !important;
+  margin-bottom: 10px !important;
+}
+
+#ankilang.show-words .words {
+  position: relative !important;
+  height: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+}
+
+#ankilang.show-words tr {
+  border-bottom: 2px solid black !important;
+}
+
+#ankilang.show-words p {
+  margin-bottom: 10px;
+}
+
+#ankilang.show-words .word {
+  word-wrap: normal !important;
+  padding-left: 5px !important;
+  width: 125px !important;
+}
+
+#ankilang.show-words .secondary {
+  display: none !important;
+}
+
+#ankilang.show-words .word:hover .primary {
+  display: none !important;
+}
+
+#ankilang.show-words .word:hover .secondary {
+  display: block !important;
+}
+
+#ankilang.show-words .definitions {
+  word-wrap: break-word !important;
+}
+
+#ankilang.show-words .actions {
+  bottom: 0px !important;
+  text-align: center !important;
+  padding: 15px 0px !important;
+}
+
+#ankilang.show-words a.button {
+  font-size: 14px !important;
+  font-weight: bold !important;
+  padding: 10px 15px !important;
+  color: #70DBFF !important;
+  background-color: #3D3D3D !important;
+  border: 0px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  border-radius: 15px !important;
+}
+
+#ankilang.show-words a.button:hover {
+  color: white !important;
+}
+
+#ankilang.show-words a.download-deck {
+  opacity: 0 !important;
+  -webkit-transition: opacity 1s !important;
+}
+
+#ankilang.show-words a.reveal {
+  opacity: 1 !important;
+}
+
+/* Error styling */
+#ankilang.error .content h1 {
+  text-decoration: bold !important;
+  font-size: 24px !important;
+  color: black !important;
+  margin-bottom: 5px !important;
+}
+
+#ankilang.error .content p {
+  font-size: 16px !important;
+  color: black !important;
+  vertical-align: middle !important;
+}
