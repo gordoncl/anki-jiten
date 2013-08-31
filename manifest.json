@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Anki Jiten (BETA)",
-  "description": "This extension captures and converts highlighted Japanese text into an Anki deck for English speakers. NOTE: The plugin is currently in BETA and does not properly handle conjugated verbs or adjectives.",
+  "description": "This extension captures and converts highlighted Japanese text into an Anki deck for English speakers.",
   "version": "0.1",
 
   "background": {
